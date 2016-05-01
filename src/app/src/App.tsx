@@ -56,7 +56,7 @@ export class App extends React.Component<any, any> {
       <SearchkitProvider searchkit={this.searchkit}>
         <Layout size="l">
           <TopBar>
-            <div className="my-logo">NIH Grants</div>
+            <div className="my-logo">NIH Grants & Funding</div>
             <SearchBox
               translations={{"searchbox.placeholder":"Search Grants ..."}}
               queryOptions={{"minimum_should_match":"70%"}}
