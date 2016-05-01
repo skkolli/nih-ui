@@ -15,7 +15,7 @@ export const GrantHitsGridItem = (props)=> {
         </div>        
       </a>
       <div className={bemBlocks.item("subtitle")}>
-            Issuing Organization: {source.po_cds}<br/>
+            <span className={bemBlocks.item("po_cds")}>Issuing Organization:</span> {source.po_cds}<br/>
             Posting Date: {source.posted_date}<br/>
             Expiring Date: {source.expiration_date}<br/>
             Activity Code: {source.activity_code}   
@@ -32,8 +32,17 @@ export const GrantHitsListItem = (props)=> {
     <div className={bemBlocks.item().mix(bemBlocks.container("item"))} data-qa="hit">      
       <div className={bemBlocks.item("details")}>
         <a href={url} target="_blank"><h2 className={bemBlocks.item("title")} dangerouslySetInnerHTML={{__html:source.title}}></h2></a>
-        <h3 className={bemBlocks.item("subtitle")}>Issuing Organization: {source.po_cds}, Posting Date: {moment(source.posted_date,"YYYYMMDD").format("MM/DD/YYYY")}, Expiring Date: {moment(source.expiration_date,"YYYYMMDD").format("MM/DD/YYYY")}, Activity Code: {source.activity_code}</h3>
-        <div className={bemBlocks.item("text")} dangerouslySetInnerHTML={{__html:"Summary: " + source.summary}}></div>
+        <h3 className={bemBlocks.item("subtitle")}>
+            <span className={bemBlocks.item("subtitle_item_key")}>Issuing Organization:</span> 
+            <span className={bemBlocks.item("subtitle_item_val")}>{source.po_cds}</span> 
+            <span className={bemBlocks.item("subtitle_item_key")}>Posting Date:</span>  
+            <span className={bemBlocks.item("subtitle_item_val")}>{moment(source.posted_date,"YYYYMMDD").format("MM/DD/YYYY")}</span>
+            <span className={bemBlocks.item("subtitle_item_key")}>Expiring Date:</span> 
+            <span className={bemBlocks.item("subtitle_item_val")}>{moment(source.expiration_date,"YYYYMMDD").format("MM/DD/YYYY")}</span> 
+            <span className={bemBlocks.item("subtitle_item_key")}>Activity Code:</span> 
+            <span className={bemBlocks.item("subtitle_item_val")}>{source.activity_code}</span>
+        </h3>
+        <div className={bemBlocks.item("text")} dangerouslySetInnerHTML={{__html:"<span style='font-weight:bold'>Summary: </span>" + source.summary}}></div>
       </div>
     </div>
   )

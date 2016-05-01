@@ -30,8 +30,8 @@ import {
   ItemHistogramList, PageSizeSelector, Toggle
 } from "searchkit";
 
-import "./../styles/customisations.scss";
 import "searchkit/theming/theme.scss";
+import "./../styles/customisations.scss";
 
 import {GrantHitsGridItem, GrantHitsListItem} from "./ResultComponents"
 
@@ -97,7 +97,7 @@ export class App extends React.Component<any, any> {
               </ActionBar>
 
               <ViewSwitcherHits
-      				    hitsPerPage={5} highlightFields={["title","summary"]}
+      				    hitsPerPage={10} highlightFields={["title","summary"]}
                   sourceFilter={["title", "issuing_org", "po_cds","activity_code", "posted_date", "expiration_date", "grant_url", "announcement_number","summary"]}
                   hitComponents = {[
                     {key:"list", title:"List", itemComponent:GrantHitsListItem, defaultOption:true},

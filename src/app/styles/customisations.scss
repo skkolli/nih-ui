@@ -1,5 +1,57 @@
 
+@import url(https://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,900italic);
+
 $font-stack:    Helvetica, sans-serif;
+
+.sk-layout {
+	font-family:Lato, Helvetica
+}
+
+.sk-hits-list-hit__title {
+	font-family:Lato, Helvetica
+}
+
+.sk-hits-list-hit__text {
+	font-family:Lato, Helvetica;
+	font-size:15px;
+	text-align:justify;
+	max-width:100%;
+}
+
+.sk-hits-list-hit__subtitle {
+	font-family:Lato, Helvetica;	
+}
+
+.sk-hits-list-hit__subtitle_item_key{
+	font-weight:bold;
+	margin-right:3px;
+}
+
+.sk-hits-list-hit__subtitle_item_val {
+	margin-right: 5px;
+}
+
+.sk-hierarchical-menu-option__text {
+	text-transform: uppercase;
+}
+
+.sk-item-list-option__text {
+	text-transform: uppercase;
+}
+
+/*
+.sk-item-list-option.is-histogram .sk-item-list-option__count {
+	color:#08C;
+	font-weight:bold;
+}
+
+.sk-hierarchical-menu-option__count {
+	color:#08C;
+}
+
+.sk-item-list-option__count {
+	color:#08C;
+}*/
 
 .layout__crime-app {
   .layout__results {
