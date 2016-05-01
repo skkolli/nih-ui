@@ -20,9 +20,6 @@
     "./src/app/src/ResultComponents.tsx",
     "./src/app/src/TaxonomyApp.tsx",
     "./src/app/test/unit/AppSpec.tsx",
-    "./src/demo/demo1.tsx",
-    "./src/demo/demo2.tsx",
-    "./src/demo/HitItems.tsx",
     "./src/index.tsx",
     "./src/app/index.ts",
     "./typings/tsd.d.ts"
