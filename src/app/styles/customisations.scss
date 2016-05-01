@@ -39,6 +39,14 @@ $font-stack:    Helvetica, sans-serif;
 	text-transform: uppercase;
 }
 
+.sk-tag-cloud-option__text{
+	text-transform: uppercase;
+}
+
+.sk-select select option {
+	text-transform: uppercase;
+}
+
 /*
 .sk-item-list-option.is-histogram .sk-item-list-option__count {
 	color:#08C;
