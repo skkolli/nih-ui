@@ -1,10 +1,10 @@
 # nih-ui
 
-## PRERESIQUTES
+#### PRERESIQUTES
 - tsd (https://github.com/DefinitelyTyped/tsd)
 - npm version 3.x
 
-## GET STARTED
+#### GET STARTED
 - npm install
 - tsd install
 - npm start
