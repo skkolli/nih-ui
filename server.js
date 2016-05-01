@@ -55,23 +55,23 @@ module.exports = {
     }
 
 
-    var host = process.env.ES_URL || "http://localhost:9200"
-
-    app.use("/api", cors({
-      origin:"*",
-      maxAge:20*24*60*60 //20 days like elastic
-    }))
-    app.use("/api/movies", SearchkitExpress.createRouter({
-      host, index:"movies"
-    }))
-
-    app.use("/api/crimes", SearchkitExpress.createRouter({
-      host, index:"crimes"
-    }))
-
-    app.use("/api/taxonomy", SearchkitExpress.createRouter({
-      host, index:"taxonomynested"
-    }))
+//    var host = process.env.ES_URL || "http://localhost:9200"
+//
+//    app.use("/api", cors({
+//      origin:"*",
+//      maxAge:20*24*60*60 //20 days like elastic
+//    }))
+//    app.use("/api/movies", SearchkitExpress.createRouter({
+//      host, index:"movies"
+//    }))
+//
+//    app.use("/api/crimes", SearchkitExpress.createRouter({
+//      host, index:"crimes"
+//    }))
+//
+//    app.use("/api/taxonomy", SearchkitExpress.createRouter({
+//      host, index:"taxonomynested"
+//    }))
 
 
     app.get('*', function(req, res) {
